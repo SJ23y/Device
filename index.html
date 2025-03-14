@@ -7,111 +7,271 @@
   <body>
 
     <body class="body">
-      <header>
-          <label class="visually-hidden">Текст поиска</label>
-          <input type="text" placeholder="Текст поиска">
-          <button class="search-button">Найти</button>
-          <button class="login-button">Войти</button>
-          <button class="compare-button">Сравнить</button>
-          <button class="cart-button">2 Корзина</button>
-      <nav>
-          <div class="dropdown-menu">
-              <h2>Каталог товаров
-              <ul>
-                  <li>Виртуальная реальность</li>
-                  <li>Моноподы для cелфи</li>
-                  <li>Экшн-камеры</li>
-                  <li>Фитнес-браслеты</li>
-                  <li>Умные часы</li>
-                  <li>Квадрокоптеры</li>
-              </ul>
-          </div>
+      <h1 class="visually-hidden">Магазин гаджетов Device</h1>
+      <header class="page-header">
+        <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+        <input type="text" placeholder="Текст поиска" id="site-search">
+        <button class="search-button">Найти</button>
+        <button class="login-button">Войти</button>
+        <button class="compare-button">Сравнить</button>
+        <button class="cart-button">
+          <span class="cart-count">2</span> 
+          Корзина
+        </button>
 
-          <ul class="services-list">
-              <li class="services-item">Доставка</li>
-              <li class="services-item">Гарантия</li>
-              <li class="services-item">Контакты</li>
-          </ul>
-      </nav>
+        <nav class="page-navigation">
+            <div class="dropdown-menu">
+                <h2 class="catalog-title">Каталог товаров</h2>
+                <ul class="sub-catalog">
+                    <li class="ctalog-item"><a href="">Виртуальная реальность</a></li>
+                    <li class="ctalog-item"><a href="">Моноподы для cелфи</a></li>
+                    <li class="ctalog-item"><a href="">Экшн-камеры</a></li>
+                    <li class="ctalog-item"><a href="">Фитнес-браслеты</a></li>
+                    <li class="ctalog-item"><a href="">Умные часы</a></li>
+                    <li class="ctalog-item"><a href="">Квадрокоптеры</a></li>
+                </ul>
+            </div>
 
-      </nav>
+            <ul class="services-list">
+                <li class="services-item"><a href="">Доставка</a></li>
+                <li class="services-item"><a href="">Гарантия</a></li>
+                <li class="services-item"><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+
+        </nav>
       </header>
-      <main>
+
+      <main class="page-main">
 
           <section class="promo">
-              Порхает как бабочка,
-              жалит как пчела!
-              01
-              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-              Подробнее
-              800 м
-              50 м
-              Дальность полета
-              Радиус поражения
+            <h2 class="visually-hidden">Слайдер промо товаров</h2>          
+            
+            <ol class="promo-slider-list">
+              <li>
+                <img src="" alt="Фото квадракоптера">
+                <span>01</span>
+                <b>Порхает как бабочка,жалит как пчела!</b>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a href="">Подробнее</a>
+                <dl>
+                  <dt>Дальность полета</dt>
+                  <dd>800 м</dd>
+                
+                  <dt>Радиус поражения</dt>
+                  <dd>50 м</dd>
+                </dl>
+              </li>
+              <li>
+                <img src="" alt="Фото фитнесс браслета">
+                <span>02</span>
+                <b>Худеем правильно!</b>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="">Подробнее</a>
+                <dl>
+                  <dt>Без подзарядки</dt>
+                  <dd>48 часов</dd>
+                </dl>
+              </li>
+              <li>
+                <img src="" alt="Фото палки для селфи">
+                <span>03</span>
+                <b>Делай селфи, как Бен Стиллер! </b>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <a href="">Подробнее</a>
+                <dl>
+                  <dt>Длина</dt>
+                  <dd>8,5 м</dd>
+                
+                  <dt>Вес палки</dt>
+                  <dd>5 кг</dd>
+
+                  <dt>Карбон</dt>
+                  <dd>5 кг</dd>
+                </dl>
+              </li>              
+            </ol>  
+            <div class="promo-slider-control">
+              <button class="previous-button"></button>
+              <button class="next-button"></button>
+              <ol class="slider-bullets">
+                <li class="bullet">
+                  <button></button>
+                </li>
+                <li class="bullet">
+                  <button></button>
+                </li>
+                <li class="bullet">
+                  <button></button>
+                </li>
+              </ol>
+            </div>            
           </section>
 
           <section class="categories">
-
-              Виртуальная
-              реальность
-              Моноподы
-              для селфи
-              Экшн-камеры
-              Фитнес-браслеты
-              Умные часы
-              Квадрокоптеры
+            <h2 class="visually-hidden">Список категорий товаров</h2>
+            <ul class="categories-list">
+              <li class="category-item">
+                <a href="" class="category-link"></a>
+                <span class="category-image"></span>
+                Виртуальная реальность</li>
+              <li class="category-item">
+                  <a href="" class="category-link">
+                  <span class="ctagory-image"></span>
+                  Моноподы для селфи
+                </a><a href="">
+              </li>
+              <li class="category-item">
+                <a href="" class="category-link">
+                  <span class="ctagory-image"></span>
+                  Экшн-камеры
+                </a>
+              </li>
+              <li class="category-item">
+                <a href="" class="category-link">
+                  <span class="ctagory-image"></span>
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li class="category-item">
+                <a href="" class="category-link">
+                  <span class="ctagory-image"></span>
+                  Умные часы
+                </a>
+              </li>
+              <li class="category-item">
+                <a href="" class="category-link">
+                  <span class="ctagory-image"></span>
+                  Квадрокоптеры
+                </a>
+              </li>
+            </ul>
           </section>
-          <section class="delivery">
-              Доставка
-              Доставка
-              Гарантия
-              Кредит
-              Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.
+
+          <section class="services">
+            <h2>Дополнительные услуги</h2>
+            <ul class="serivices-list">
+              <li class="service-item">
+                <h3 class="service-title">Доставка</h3>
+                <p class="service-description">
+                  Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+              </li>
+              <li class="service-item">
+                <h3 class="service-title">Гарантия</h3>
+                <p class="service-description">
+                  Если из-за возгорания купленного у нас товара у вас
+                  сгорит дом — не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же.
+                </p>
+              </li>
+              <li class="service-item">
+                <h3 class="service-title">Кредит</h3>
+                <p class="service-description">
+                  Залезть в долговую яму стало проще! 
+                  Кредитные консультанты подберут для вас наиболее выгодные условия кредита. 
+                  Выгодные для банка, разумеется.
+                </p>
+              </li>
+            </ul>
+            <ul class="services-controls">
+              <li><button>Доставка</button></li>
+              <li><button>Гарантия</button></li>
+              <li><button>Кредит</button></li>
+            </ul>              
           </section>
 
-          <article class="special-delivery">Доставим редкий товар под заказ</article>
+          <article class="special-delivery-promo">Доставим редкий товар под заказ</article>
 
           <section class="about">
-            О нас
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            <h2>О нас</h2>
+            <p>
+              Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            </p>
+            
 
-            Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
-            Меловые линии
-            СДИК
-            ТоксБерри
-            Подробнее о нас
+            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <ul>
+              <li>Меловые линии</li>
+              <li>СДИК</li>
+              <li>ТоксБерри</li>
+            </ul>  
+            <a href="">Подробнее о нас</a>
           </section>
+
           <section class="contacts">
-            Контакты
-            Вы можете забрать товар сами, заехав в наш офис.
-            Заодно сможете проверить работоспособность покупки.
-            Интернет-магазин «Девайс»
-            Санкт-Петербург, набережная реки Карповки, 5, литера П.
-            +7 (812) 812-12-12
-            Время работы
-            пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
-            Напишите нам
+            <h2>Контакты</h2>
+            <p>
+              Вы можете забрать товар сами, заехав в наш офис.
+              Заодно сможете проверить работоспособность покупки.
+            </p>
+            
+            <b>Интернет-магазин «Девайс»</b>
+            <address>
+              <span>Санкт-Петербург, набережная реки Карповки, 5, литера П.</span>
+              <span>+7 (812) 812-12-12</span>
+            </address>
+            <b>Время работы</b>
+            <ul>
+              <li>пн—пт: с 10:00 до 22:00</li>
+              <li>сб—вс: с 10:00 до 19:00</li>
+            </ul>
+            <a href="">Напишите нам</a>
           </section>
 
           <section class="subscribe">
-            Подпишитесь
-            на рассылку
-            Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-            Ваш e-mail
-            Подписаться
-            Это бесплатно
+            <h2>Подпишитесь на рассылку</h2>
+            <p>
+              Еженедельный дайджест с обзорами новинок,
+              длительными тест-драйвами, распаковками, 
+              а также акции, спецпредложения и вот это вот всё.
+            </p>
+            <form action="">
+              <label for="">
+                <input type="email" placeholder="Ваш e-mail">
+                <span class="visually-hidden">Ваш Email</span>
+              </label>
+              <button type="submit">Подписаться</button>
+            </form>             
+            <span>Это бесплатно</span>
           </section>
   </main>
   <footer>
-  Санкт-Петербург, набережная
-  реки Карповки, 5, литера П.
-  Доставка
-  Гарантия
-  Контакты
-  Тел.: +7 (812) 812-12-12
+    <address>
+      Санкт-Петербург, набережная
+      реки Карповки, 5, литера П.
+    </address>
+    <ul>
+      <li><a href="">Доставка</a></li>
+      <li><a href="">Гарантия</a></li>
+      <li><a href="">Контакты</a></li>
+    </ul>
+    <address>
+      Тел.: +7 (812) 812-12-12
+    </address>
+    <ul>
+      <li>
+        <a href="">
+        <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+        <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+        <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+    </ul>
+    <a>
+      <span class="visually-hidden">Html Academy</span>
+    </a>
   </footer>
   </body>
 
