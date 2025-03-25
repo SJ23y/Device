@@ -43,7 +43,7 @@
   padding-top: 17px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: start;
   width: 1440px;
   min-height: 100%;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -51,6 +51,11 @@
 
 .page-main {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
   flex-grow: 1;
 }
 
@@ -93,9 +98,43 @@
   height: 8px;
   transform: translateY(-50%);
   background-color: #ffe17f;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   content: "";
   z-index: -1;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 535px;
+  padding-top: 47px;
+  margin-bottom: 70px;
+}
+
+.section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  content: "";
+}
+
+.section-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 48px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.section-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 /* PAGE HEADER */
@@ -509,12 +548,7 @@
 }
 
 .service-title {
-  padding: 0;
-  margin: 0;
   margin-bottom: 34px;
-  font-family: "Raleway", "Arial", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
 }
 
 .service-description {
@@ -552,4 +586,130 @@
 
 .services-control-item.active > button::after {
   display: none;
+}
+
+.special-delivery-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1160px;
+  min-height: 100px;
+  margin: 0 auto 70px;
+  border: none;
+  padding: 0 125px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
+.special-delivery-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125px;
+  height: 100%;
+  content: "";
+  background-color: #ffe17f;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../img/express-delivery.svg");
+}
+
+
+.special-delivery-button::after {
+  position: absolute;
+  top: 50%;
+  right: 42.5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  transform: translateY(-50%);
+  background-color: #dcdcdc;
+  content: "i";
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Rubik", "Arial", sans-serif;
+  line-height: 40px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+/* About */
+
+.about {
+  margin-right: 90px;
+  padding-right: 38px;
+}
+
+.about-button {
+  width: 270px;
+  height: 40px;
+}
+
+.delivery-companies-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.delivery-company-item {
+  position: relative;
+  padding-left: 26px;
+}
+
+.delivery-company-item::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #ffc700;
+  border-radius: 50%;
+  content: "";
+}
+
+.delivery-company-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+/* Contacts */
+
+.contacts {
+  padding-right: 19px;
+}
+
+.contacts-button {
+  width: 259px;
+  height: 40px;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  text-decoration: underline;
+}
+
+.contacts-timetable {
+  list-style-type: none;
 }
