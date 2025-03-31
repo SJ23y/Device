@@ -83,22 +83,26 @@
 
             <form action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-block">
-                <legend>Стоимость</legend>
+                <legend class="filter-block-title">Стоимость</legend>
                 <div class="price-range">
-                  <div class="price-range-bar">
+                  <div class="price-range-bar" style="width: 119px; left: 0;">
                     <button class="price-range-button range-button-min"></button>
                     <button class="price-range-button range-button-max"></button>
+
+                    <div class="price-input-block">
+                      <label class="price-label" for="price-from">От</label>
+                      <input class="price-input" type="number" name="price-from" id="price-from" value="0">
+                    </div>
+                    <div class="price-input-block">
+                      <label class="price-label" for="price-to">До</label>
+                      <input class="price-input" type="number" name="price-to" id="price-to" value="5000">
+                    </div>
+
                   </div>
-                </div>
-                <div>
-                  <label for="price-from">От</label>
-                  <input type="number" name="price-from" id="price-from" value="0">
-                  <label for="price-to">До</label>
-                  <input type="number" name="price-to" id="price-to" value="5000">
                 </div>
               </fieldset>
               <fieldset class="filter-block">
-                <legend>Цвет</legend>
+                <legend class="filter-block-title">Цвет</legend>
                 <ul>
                   <li>
                     <label>
@@ -138,7 +142,7 @@
                 </ul>
               </fieldset>
               <fieldset class="filter-block">
-                <legend>Bluetooth</legend>
+                <legend class="filter-block-title">Bluetooth</legend>
                 <ul>
                   <li>
                     <label>
@@ -163,7 +167,7 @@
           <section class="catalog-sorting">
             <h3 class="catalog-container-title">Сортировка:</h3>
             <form action="https://echo.htmlacademy.ru/" method="get">
-              <select name="Тип сортировки" id="">
+              <select class="sorting-control" name="Тип сортировки" id="">
                 <option value="popular" selected>Популярные</option>
                 <option value="price">По цене</option>
                 <option value="raiting">По рейтингу</option>
@@ -173,10 +177,18 @@
 
             <ul class="sorting-direction">
               <li>
-                <button class="up-direction"></button>
+                <button class="direction-button up-direction">
+                  <svg class="direction-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
+                    <path d="m6 0 5.5 10H.5"/>
+                  </svg>
+                </button>
               </li>
               <li>
-                <button class="down-direction"></button>
+                <button class="direction-button down-direction">
+                  <svg class="direction-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
+                    <path d="m6 0 5.5 10H.5"/>
+                  </svg>
+                </button>
               </li>
             </ul>
           </section>
