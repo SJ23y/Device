@@ -137,6 +137,18 @@
   margin-bottom: 30px;
 }
 
+.common-title {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 /* PAGE HEADER */
 
 .page-header {
@@ -984,6 +996,7 @@
 
 .catalog-sorting {
   grid-column: 3 / 4;
+  display: flex;
   width: 100%;
   min-height: 70px;
 }
@@ -991,10 +1004,68 @@
 
 /* Catalog list */
 
-.catalog {
+.products {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   width: 100%;
+  padding: 70px 40px 44px 40px;
+  background-color: #ffffff;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
+  width: 100%;
+}
+
+.product-link {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.product-image-mask {
+  display: none;
+}
+
+.product-link:hover .product-button {
+  width: 240px;
+  min-height: 40px;
+}
+
+.product-link:hover .product-image-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 380px;
+  background-color: rgba(240, 240, 240, 0.8);
+  border: 1px solid #000000;
+}
+
+.product-title {
+  width: 226px;
+  font: inherit;
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-price {
+  font: inherit;
+  color: #444444;
 }
 
 /* Pagination */
@@ -1003,4 +1074,70 @@
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   width: 100%;
+  padding: 0 40px 78px;
+  background-color: #ffffff;
+}
+
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 55px;
+  margin-bottom: 44px;
+  background-color: transparent;
+  border: 3px solid #e5e5e5;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.pagination-controls {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  column-gap: 70px;
+  width: 100%;
+  min-height: 71px;
+  background-color: #ebebeb;
+}
+
+.pagination-pages {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.pagination-previous,
+.pagination-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 71px;
+  border: none;
+  background-color: transparent;
+}
+
+.pagination-next {
+  grid-column: 3 / 4;
 }

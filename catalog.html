@@ -77,6 +77,7 @@
 
 
         <div class="catalog-container">
+
           <section class="catalog-filter">
             <h3 class="filter-title catalog-container-title">Фильтр:</h3>
 
@@ -158,6 +159,7 @@
               <button type="submit">Показать</button>
             </form>
           </section>
+
           <section class="catalog-sorting">
             <h3 class="catalog-container-title">Сортировка:</h3>
             <form action="https://echo.htmlacademy.ru/" method="get">
@@ -179,38 +181,51 @@
             </ul>
           </section>
 
-          <section class="catalog">
+          <section class="products">
             <h3 class="visually-hidden">Список отфильтрованных и отсортированных товаров</h3>
             <ul class="products-list">
-
               <li class="product-item">
-                <a class="product-link" href="#">Подробнее</a>
-                  <img src="img/catalog/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <h4 class="product-title">Любительская селфи-палка</h4>
+                <a class="product-link" href="#">
+                  <div class="product-image-mask">
+                    <button class="button product-button">Подробнее</button>
+                  </div>
+                  <img class="product-image" src="img/catalog/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <h4 class="product-title">Любительская<br> селфи-палка</h4>
                   <span class="product-price">500 ₽</span>
-
+                </a>
               </li>
 
               <li class="product-item">
-                <a class="product-link" href="#">Подробнее</a>
-                  <img src="img/catalog/product-1.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <h4 class="product-title">Профессиональная селфи-палка</h4>
+                <a class="product-link" href="#">
+                  <div class="product-image-mask">
+                    <button class="button product-button">Подробнее</button>
+                  </div>
+                  <img class="product-image" src="img/catalog/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <h4 class="product-title">Профессиональная<br> селфи-палка</h4>
                   <span class="product-price">1500 ₽</span>
+                </a>
               </li>
 
               <li class="product-item">
-                  <a class="product-link" href="#">Подробнее</a>
-                  <img src="img/catalog/product-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <h4 class="product-title">Непотопляемая селфи-палка</h4>
+                <a class="product-link" href="#">
+                  <div class="product-image-mask">
+                    <button class="button product-button">Подробнее</button>
+                  </div>
+                  <img class="product-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <h4 class="product-title">Непотопляемая<br> селфи-палка</h4>
                   <span class="product-price">2500 ₽</span>
                 </a>
               </li>
 
               <li class="product-item">
-                  <a class="product-link" href="#">Подробнее</a>
-                  <img src="img/catalog/product-1.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <a class="product-link" href="#">
+                  <div class="product-image-mask">
+                    <button class="button product-button">Подробнее</button>
+                  </div>
+                  <img class="product-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   <h4 class="product-title">Селфи-палка «Следуй за мной»</h4>
                   <span class="product-price">1500 ₽</span>
+                </a>
               </li>
 
             </ul>
@@ -219,11 +234,11 @@
           <section class="pagination">
             <h3 class="visually-hidden">Список страниц для перехода</h3>
 
-            <button class="button load-more-button">Загрузить ещё</button>
+            <button class="load-more-button">Загрузить ещё</button>
 
             <div class="pagination-controls">
-              <button class="pagination-previous">Назад</button>
-              <button class="pagination-next">Вперёд</button>
+              <button class="common-title pagination-previous">Назад</button>
+              <button class="common-title pagination-next">Вперёд</button>
               <ul class="pagination-pages">
                 <li><a class="pagination-page">1</a></li>
                 <li><a class="pagination-page">2</a></li>
