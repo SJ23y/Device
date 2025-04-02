@@ -1013,6 +1013,7 @@
   height: 2px;
   background-color: #dcdcdc;
   margin-top: 10px;
+  margin-bottom: 68px;
 }
 
 .price-range-bar {
@@ -1049,7 +1050,7 @@
 
 .price-input-block {
   position: absolute;
-  top: 15px;
+  top: 33px;
   display: flex;
   font-size: 15px;
   line-height: normal;
@@ -1061,13 +1062,91 @@
 }
 
 .price-input {
+  padding: 0;
+  margin: 0;
   display: inline-block;
-  width: fit-content;
+  max-width: 70px;
   border: none;
   background-color: transparent;
   appearance: textfield;
   font: inherit;
   color: inherit;
+}
+
+.price-from {
+  width: 10px;
+}
+
+.price-to {
+  width: 50px;
+}
+
+
+.price-input::-webkit-inner-spin-button,
+.price-input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.colors-list,
+.bluetooth-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 35px;
+}
+
+.label-container {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 20px;
+}
+
+.color-label {
+  margin-bottom: 17px;
+}
+
+.checkbox-mark,
+.radio-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+}
+
+.input-control:checked + .checkbox-mark {
+  background-image: url("../img/catalog/ok-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-color: #000000;
+}
+
+.radio-mark {
+  border-radius: 50%;
+}
+
+.input-control:checked + .radio-mark {
+  border-color: #000000;
+}
+
+.input-control:checked + .radio-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  content: "";
+}
+
+.filter-submit-button {
+  width: 100%;
+  min-height: 40px;
 }
 
 /* Catalog sorting */
@@ -1154,6 +1233,10 @@
   align-items: center;
   text-decoration: none;
   line-height: 20px;
+}
+
+.product-image {
+  margin-bottom: 32px;
 }
 
 .product-image-mask {

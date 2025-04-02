@@ -91,11 +91,11 @@
 
                     <div class="price-input-block">
                       <label class="price-label" for="price-from">От</label>
-                      <input class="price-input" type="number" name="price-from" id="price-from" value="0">
+                      <input class="price-input price-from" type="number" name="price-from" id="price-from" value="0">
                     </div>
                     <div class="price-input-block">
                       <label class="price-label" for="price-to">До</label>
-                      <input class="price-input" type="number" name="price-to" id="price-to" value="5000">
+                      <input class="price-input price-to" type="number" name="price-to" id="price-to" value="5000">
                     </div>
 
                   </div>
@@ -103,38 +103,38 @@
               </fieldset>
               <fieldset class="filter-block">
                 <legend class="filter-block-title">Цвет</legend>
-                <ul>
+                <ul class="colors-list">
                   <li>
-                    <label>
-                      <input type="checkbox" name="color" value="Черный">
+                    <label class="color-label label-container">
+                      <input class="visually-hidden input-control" type="checkbox" name="color" value="Черный" checked>
                       <span class="checkbox-mark"></span>
                       <span>Черный</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="color" value="Белый">
+                    <label class="color-label label-container">
+                      <input class="visually-hidden input-control" type="checkbox" name="color" value="Белый" checked>
                       <span class="checkbox-mark"></span>
                       <span>Белый</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="color" value="Синий">
+                    <label class="color-label label-container">
+                      <input class="visually-hidden input-control" type="checkbox" name="color" value="Синий">
                       <span class="checkbox-mark"></span>
                       <span>Синий</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="color" value="Красный">
+                    <label class="color-label label-container">
+                      <input class="visually-hidden input-control" type="checkbox" name="color" value="Красный">
                       <span class="checkbox-mark"></span>
                       <span>Красный</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="color" value="Розовый">
+                    <label class="color-label label-container">
+                      <input class="visually-hidden input-control" type="checkbox" name="color" value="Розовый">
                       <span class="checkbox-mark"></span>
                       <span>Розовый</span>
                     </label>
@@ -143,24 +143,24 @@
               </fieldset>
               <fieldset class="filter-block">
                 <legend class="filter-block-title">Bluetooth</legend>
-                <ul>
+                <ul class="bluetooth-list">
                   <li>
-                    <label>
-                      <input type="radio" name="bluetooth" value="Есть">
+                    <label class="label-container">
+                      <input class="visually-hidden input-control" type="radio" name="bluetooth" value="Есть" checked>
                       <span class="radio-mark"></span>
                       <span>Есть</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="radio" name="bluetooth" value="Нет">
+                    <label class="label-container">
+                      <input class="visually-hidden input-control" type="radio" name="bluetooth" value="Нет">
                       <span class="radio-mark"></span>
                       <span>Нет</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <button type="submit">Показать</button>
+              <button class="button filter-submit-button" type="submit">Показать</button>
             </form>
           </section>
 
