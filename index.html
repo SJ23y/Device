@@ -15,8 +15,10 @@
         <div class="user-section">
           <form class="site-search" action="https://echo.htmlacademy.ru/" method="get">
             <input class="search-input" type="text" name="search" placeholder="Текст поиска" id="site-search">
+            <label class="search-label" for="site-search">
+              <span class="visually-hidden">Поиск по сайту</span>
+            </label>
             <button class="search-button" type="submit">Найти</button>
-            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
           </form>
           <a class="login user-section-button" href="#">Войти</a>
           <a class="compare-button user-section-button" href="#">Сравнить</a>
@@ -31,30 +33,30 @@
               Каталог товаров
               <span class="dropdown-icon"></span>
               <ul class="sub-catalog">
-                <li class="catalog-item">
-                  <a href="#">Виртуальная реальность</a>
+                <li class="ssub-catalog-column-1 sub-catalog-row-1">
+                  <a class="sub-catalog-link" href="#">Виртуальная реальность</a>
                 </li>
-                 <li class="catalog-item">
-                   <a href="#">Моноподы для cелфи</a>
+                 <li class="sub-catalog-column-1 sub-catalog-row-2">
+                   <a class="sub-catalog-link" href="#">Моноподы для cелфи</a>
                  </li>
-                 <li class="catalog-item">
-                   <a href="#">Экшн-камеры</a>
+                 <li class="sub-catalog-column-1 sub-catalog-row-3">
+                   <a class="sub-catalog-link" href="#">Экшн-камеры</a>
                  </li>
-                 <li class="catalog-item">
-                   <a href="#">Фитнес-браслеты</a>
+                 <li class="sub-catalog-column-2 sub-catalog-row-1">
+                   <a class="sub-catalog-link" href="#">Фитнес-браслеты</a>
                  </li>
-                 <li class="catalog-item">
-                   <a href="#">Умные часы</a>
+                 <li class="sub-catalog-column-2 sub-catalog-row-2">
+                   <a class="sub-catalog-link" href="#">Умные часы</a>
                  </li>
-                 <li class="catalog-item">
-                   <a href="#">Квадрокоптеры</a>
+                 <li class="sub-catalog-column-3 sub-catalog-row-1">
+                   <a class="sub-catalog-link" href="#">Квадрокоптеры</a>
                  </li>
               </ul>
             </button>
 
             <ul class="header-services-list">
               <li>
-                <a class="service-link" href="#">Доставка</a>
+                <a class="service-link active" href="#">Доставка</a>
               </li>
               <li>
                 <a class="service-link" href="#">Гарантия</a>
@@ -292,7 +294,7 @@
             </p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="subscribe-email">Ваш Email</label>
-                <input class="subscribe-input" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email">
+                <input class="subscribe-input" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
               <button class="button subscribe-button" type="submit">Подписаться</button>
             </form>
             <span class="subscribe-assurance">
@@ -313,7 +315,7 @@
           реки Карповки, 5, литера П.
         </address>
         <ul class="footer-services">
-          <li><a class="footer-service-link" href="#">Доставка</a></li>
+          <li><a class="footer-service-link active" href="#">Доставка</a></li>
           <li><a class="footer-service-link" href="#">Гарантия</a></li>
           <li><a class="footer-service-link" href="#">Контакты</a></li>
         </ul>
