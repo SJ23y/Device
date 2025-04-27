@@ -87,8 +87,8 @@
                 <legend class="filter-block-title">Стоимость</legend>
                 <div class="price-range">
                   <div class="price-range-bar" style="width: 119px; left: 0;">
-                    <button class="price-range-button range-button-min"></button>
-                    <button class="price-range-button range-button-max"></button>
+                    <button class="price-range-button range-button-min" type="button"></button>
+                    <button class="price-range-button range-button-max" type="button"></button>
 
                     <div class="price-input-block">
                       <label class="price-label" for="price-from">От</label>
@@ -154,7 +154,7 @@
                   </li>
                   <li>
                     <label class="label-container">
-                      <input class="visually-hidden input-control" type="radio" name="bluetooth" value="Нет">
+                      <input class="visually-hidden input-control" type="radio" name="bluetooth" value="Нет" tabindex="0">
                       <span class="radio-mark"></span>
                       <span>Нет</span>
                     </label>
@@ -178,14 +178,14 @@
 
             <ul class="sorting-direction">
               <li>
-                <button class="direction-button up-direction">
+                <button class="direction-button up-direction" type="button">
                   <svg class="direction-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
                     <path d="m6 0 5.5 10H.5"/>
                   </svg>
                 </button>
               </li>
               <li>
-                <button class="direction-button down-direction">
+                <button class="direction-button down-direction" type="button">
                   <svg class="direction-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
                     <path d="m6 0 5.5 10H.5"/>
                   </svg>
@@ -200,7 +200,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <div class="product-image-mask">
-                    <button class="button product-button">Подробнее</button>
+                    <button class="button product-button" type="button">Подробнее</button>
                   </div>
                   <img class="product-image" src="img/catalog/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <h4 class="product-title">Любительская<br> селфи-палка</h4>
@@ -211,7 +211,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <div class="product-image-mask">
-                    <button class="button product-button">Подробнее</button>
+                    <button class="button product-button" type="button">Подробнее</button>
                   </div>
                   <img class="product-image" src="img/catalog/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                   <h4 class="product-title">Профессиональная<br> селфи-палка</h4>
@@ -222,7 +222,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <div class="product-image-mask">
-                    <button class="button product-button">Подробнее</button>
+                    <button class="button product-button" type="button">Подробнее</button>
                   </div>
                   <img class="product-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                   <h4 class="product-title">Непотопляемая<br> селфи-палка</h4>
@@ -233,7 +233,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <div class="product-image-mask">
-                    <button class="button product-button">Подробнее</button>
+                    <button class="button product-button" type="button">Подробнее</button>
                   </div>
                   <img class="product-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   <h4 class="product-title">Селфи-палка «Следуй за мной»</h4>
@@ -247,17 +247,17 @@
           <section class="pagination">
             <h3 class="visually-hidden">Список страниц для перехода</h3>
 
-            <button class="load-more-button">Загрузить ещё</button>
+            <button class="load-more-button" type="button">Загрузить ещё</button>
 
             <div class="pagination-controls">
-              <button class="common-title pagination-previous">Назад</button>
-              <button class="common-title pagination-next">Вперёд</button>
+              <button class="common-title pagination-previous" type="button">Назад</button>
+              <button class="common-title pagination-next" type="button">Вперёд</button>
               <ul class="pagination-pages">
-                <li><a class="pagination-page">1</a></li>
-                <li><a class="pagination-page">2</a></li>
-                <li><a class="pagination-page">3</a></li>
-                <li><a class="pagination-page">...</a></li>
-                <li><a class="pagination-page">15</a></li>
+                <li class="pagination-page current-page">1</li>
+                <li><a class="pagination-page" href="?page=2">2</a></li>
+                <li><a class="pagination-page" href="?page=3">3</a></li>
+                <li class="pagination-page">...</li>
+                <li><a class="pagination-page" href="?page=15">15</a></li>
               </ul>
             </div>
           </section>

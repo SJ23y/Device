@@ -88,6 +88,7 @@
   text-decoration: none;
   background-color: transparent;
   color: #000000;
+  cursor: pointer;
 }
 
 .button::after {
@@ -1521,6 +1522,35 @@
   border: 2px solid #000000;
   border-radius: 50%;
   background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.price-range-button:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.price-range-button:focus {
+  outline: none;
+}
+
+.price-range-button:focus::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  transform: translate(-50%, -50%);
+  border: 2px solid #af4fff;
+  content: "";
+}
+
+.price-range-button:active {
+  outline: none;
+  background-color: #000000;
+}
+
+.price-range-button:active::after {
+  display: none;
 }
 
 .range-button-min,
@@ -1541,33 +1571,31 @@
   display: flex;
   font-size: 15px;
   line-height: normal;
+  max-width: 75px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .price-label {
-  margin-right: 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .price-input {
+  display: block;
+  width: min-content;
+  min-width: 30px;
   padding: 0;
+  padding-left: 20px;
   margin: 0;
   display: inline-block;
-  max-width: 70px;
   border: none;
   background-color: transparent;
   appearance: textfield;
   font: inherit;
   color: inherit;
 }
-
-.price-from {
-  width: 10px;
-}
-
-.price-to {
-  width: 50px;
-}
-
 
 .price-input::-webkit-inner-spin-button,
 .price-input::-webkit-outer-spin-button {
@@ -1587,6 +1615,7 @@
   position: relative;
   padding-left: 36px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .color-label {
@@ -1631,6 +1660,35 @@
   content: "";
 }
 
+.input-control:hover ~ span {
+  opacity: 0.6;
+}
+
+.input-control:focus + .radio-mark {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.input-control:focus + .checkbox-mark::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  transform: translate(-50%, -50%);
+  border: 2px solid #af4fff;
+  content: "";
+}
+
+.input-control:active ~ span {
+  outline: none;
+  opacity: 0.3;
+}
+
+.input-control:disabled ~ span {
+  opacity: 0.1;
+}
+
 .filter-submit-button {
   width: 100%;
   min-height: 40px;
@@ -1662,6 +1720,19 @@
   font: inherit;
 }
 
+.sorting-control:hover {
+  opacity: 0.6;
+}
+
+.sorting-control:focus {
+  outline: 2px solid #af4fff;
+}
+
+.sorting-control:active {
+  opacity: 0.3;
+  outline: none;
+}
+
 .sorting-direction {
   margin: 0;
   padding: 0;
@@ -1681,6 +1752,24 @@
   height: 30px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.direction-button:hover svg {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.direction-button:focus {
+  outline: 2px solid #af4fff;
+}
+
+.direction-button:active {
+  outline: none;
+}
+
+.direction-button:active svg,
+.direction-button.active svg {
+  fill: #000000;
 }
 
 .down-direction {
@@ -1785,6 +1874,26 @@
   font-size: 16px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  border: 3px solid #000000;
+}
+
+.load-more-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.load-more-button:active {
+  border: 3px solid #000000;
+  outline: none;
+  opacity: 0.3;
+}
+
+.load-more-button:disabled {
+  opacity: 0.3;
 }
 
 .pagination-controls {
@@ -1819,7 +1928,23 @@
   font-size: 16px;
   line-height: 20px;
   color: rgba(68, 68, 68, 0.3);
+  text-decoration: none;
 }
+
+.pagination-page.current-page,
+.pagination-page:hover {
+  color: #444444;
+}
+
+.pagination-page:focus {
+  outline: 2px solid #af4fff;
+}
+
+.pagination-page:active {
+  outline: none;
+  opacity: 0.1;
+}
+
 
 .pagination-previous,
 .pagination-next {
@@ -1830,6 +1955,26 @@
   min-height: 71px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.pagination-previous:hover,
+.pagination-next:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-previous:focus,
+.pagination-next:focus {
+  background-color: #f0f0f0;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.pagination-previous:active,
+.pagination-next:active {
+  outline: none;
+  background-color: #dcdcdc;
+  opacity: 0.3;
 }
 
 .pagination-next {
