@@ -353,5 +353,41 @@
           <span class="visually-hidden">Html Academy</span>
         </a>
       </footer>
+      <div class="modal active">
+        <div class="modal-container">
+          <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="modal-delivery-title">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+            <label for="delivery-form-name">
+              <span>Ваше имя:</span>
+              <input type="text" id="delivery-form-name">
+              <span class="delivery-form-error"></span>
+            </label>
+
+            <label for="delivery-form-email">
+              <span>Ваш e-mail:</span>
+              <input type="email" id="delivery-form-email">
+              <span class="delivery-form-error"></span>
+            </label>
+
+            <label for="delivery-form-description">
+              <span>Что нужно привезти:</span>
+              <input type="text" id="delivery-form-description">
+              <span class="delivery-form-error"></span>
+            </label>
+
+            <label for="delivery-form-quantity">
+              <span class="delivery-form-quantity-label" >Количество:</span>
+              <span class="delivery-form-info-icon"></span>
+              <input type="number" id="delivery-form-quantity">
+
+            </label>
+
+            <button class="button delivery-form-submit">Отправить</button>
+          </form>
+        </div>
+      </div>
   </body>
 </html>

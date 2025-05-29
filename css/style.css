@@ -1636,7 +1636,6 @@
   padding: 0;
   padding-left: 20px;
   margin: 0;
-  display: inline-block;
   border: none;
   background-color: transparent;
   appearance: textfield;
@@ -2026,4 +2025,38 @@
 
 .pagination-next {
   grid-column: 3 / 4;
+}
+
+/* MODALS */
+.modal {
+  display: none;
+}
+
+.modal.active {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(240, 240, 240, 0.9);
+  padding-top: 100px;
+}
+
+.modal-container {
+  width: 920px;
+  min-height: 568px;
+  margin: 0 auto;
+  border: 10px solid #000000;
+  background-color: #ffffff;
+}
+
+.modal-delivery-form {
+  display: grid;
+  grid-template-columns: 360px 1fr 180px;
+  width: 100%;
+  height: 100%;
+  padding: 72px 80px;
 }
