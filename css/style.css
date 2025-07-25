@@ -80,7 +80,7 @@
   border-width: 0;
   z-index: 2;
   font-family: "Raleway", "Arial", sans-serif;
-  line-height: auto;
+  line-height: normal;
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
@@ -1278,7 +1278,7 @@
 .footer-service-link {
   position: relative;
   font-family: "Raleway", "Arial", sans-serif;
-  line-height: auto;
+  line-height: normal;
   font-weight: 800;
   letter-spacing: 0.2em;
   color: inherit;
@@ -1848,6 +1848,10 @@
   width: 100%;
 }
 
+.product-item {
+  position: relative;
+}
+
 .product-link {
   position: relative;
   display: flex;
@@ -1866,12 +1870,12 @@
   display: none;
 }
 
-.product-link:hover .product-button {
+.product-item:hover .product-button {
   width: 240px;
   min-height: 40px;
 }
 
-.product-link:hover .product-image-mask {
+.product-item:hover .product-image-mask {
   position: absolute;
   top: 0;
   left: 0;
@@ -2127,9 +2131,9 @@
 .delivery-form-label-text {
   position: relative;
   margin-bottom: 14px;
-  font-style: 18px;
+  font-size: 18px;
   line-height: 20px;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02px;
   font-weight: 700;
   color: #000000;
 }
@@ -2209,7 +2213,7 @@
 
 .delivery-quantity-input {
   position: relative;
-  appearance: text-field;
+  appearance: textfield;
   padding: 20px 60px;
   text-align: center;
 }
