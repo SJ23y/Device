@@ -40,7 +40,7 @@
 .body {
   padding: 0;
   margin: 0 auto;
-  padding-top: 17px;
+  padding-top: 13px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -101,6 +101,7 @@
   background-color: #ffe17f;
   content: "";
   z-index: -1;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .button:hover {
@@ -180,7 +181,7 @@
   width: 1040px;
   min-height: 175px;
   display: grid;
-  row-gap: 30px;
+  row-gap: 21.3px;
   color: #000000;
 }
 
@@ -197,6 +198,7 @@
 
 .page-header-logo {
   justify-self: start;
+  margin-top: 4.2px;
 }
 
 .page-header-logo:hover {
@@ -233,7 +235,7 @@
   position: relative;
   display: flex;
   width: 517px;
-  height: 40px;
+  height: 39px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -241,18 +243,19 @@
 .search-input {
   position: relative;
   flex-grow: 1;
-  padding-left: 48px;
+  padding-left: 46.3px;
   padding-right: 10px;
-  border: 2px solid #000000;
+  border: 2.5px solid #000000;
   border-right-width: 0;
   border-radius: 50px 0 0 50px;
   font-size: inherit;
   font-family: inherit;
+  line-height: 16px;
   color: inherit;
   background-color: transparent;
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
-  background-position: top 50% left 16px;
+  background-position: top 50% left 14px;
 }
 
 .search-input:disabled,
@@ -282,9 +285,9 @@
   justify-content: center;
   align-items: center;
   width: 160px;
-  min-height: 40px;
+  min-height: 39px;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2.5px solid #000000;
   border-radius: 0 50px 50px 0;
   font-size: inherit;
   font-family: inherit;
@@ -363,6 +366,7 @@
 
 .compare-button {
   background-image: url("../img/comparison.svg");
+  margin-right: 13.2px;
 }
 
 .cart-button {
@@ -370,19 +374,18 @@
   margin-left: 8px;
   border: none;
   background-image: url("../img/cart.svg");
-  background-position: top 50% left 18px;
+  background-position: top 10px left 12px;
 }
 
 .cart-count {
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 9px;
+  left: -3px;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 21px;
   min-height: 21px;
-  transform: translateY(-50%);
   background-color: #ffffff;
   border-radius: 50%;
   font-size: 14px;
@@ -397,6 +400,7 @@
   flex-direction: row;
   justify-content: end;
   align-items: center;
+  padding-top: 9px;
   font-family: "Raleway", "Arial", sans-serif;
   line-height: normal;
   font-weight: 800;
@@ -411,7 +415,7 @@
   border: none;
   background-color: transparent;
   line-height: 50px;
-  padding-right: 60px;
+  padding-right: 67.5px;
   font-size: inherit;
   font-family: inherit;
   color: inherit;
@@ -427,7 +431,7 @@
   width: 50px;
   height: 50px;
   transform: translateY(-50%);
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2.5px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
 
@@ -542,14 +546,19 @@
   justify-content: end;
   align-items: center;
   margin-left: auto;
+  margin-right: -5px;
 }
 
 .service-link {
   position: relative;
   text-decoration: none;
   line-height: 50px;
-  margin-left: 45px;
+  margin-left: 38px;
   color: inherit;
+}
+
+.header-service-item:last-child .service-link {
+  margin-left: 49px;
 }
 
 .service-link.active::after,
@@ -584,6 +593,7 @@
 .service-link:focus,
 .sub-catalog-link:focus {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .service-link:active,
@@ -597,8 +607,7 @@
 .promo {
   position: relative;
   width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: -14px auto 70px;
 }
 
 .promo-slider-list {
@@ -619,7 +628,7 @@
 
 .slider-info {
   position: relative;
-  padding: 115px 0 38px 40px;
+  padding: 122px 0 38px 40px;
   display: flex;
   width: 600px;
   flex-direction: column;
@@ -628,7 +637,7 @@
 
 .slide-number {
   position: absolute;
-  top: 12px;
+  top: 30px;
   right: 49px;
   min-height: 135px;
   display: flex;
@@ -650,7 +659,7 @@
   line-height: 50px;
   font-weight: 800;
   color: #000000;
-  margin-bottom: 29px;
+  margin-bottom: 10px;
 }
 
 .slide-description {
@@ -661,6 +670,7 @@
   width: 220px;
   min-height: 40px;
   margin-bottom: 49px;
+  padding-left: 4.5px;
 }
 
 .slide-features {
@@ -719,7 +729,7 @@
 
 .slider-bullets {
   position: absolute;
-  top: 377px;
+  top: 364px;
   right: 0;
   display: flex;
   justify-content: end;
