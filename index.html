@@ -32,14 +32,14 @@
               <ul class="cart-popup-list">
                 <li class="cart-popup-item">
                   <a class="cart-popup-link" href="#">
-                    <img class="cart-popup-img" src="./img/catalog/product-1.jpg" width="39" height="43"></img>
+                    <img class="cart-popup-img" src="./img/catalog/product-1.jpg" width="39" height="43" alt="product-1">
                     <span class="cart-popup-product">Любительская селфи-палка</span>
                   </a>
                   <button class="product-remove-btn"></button>
                 </li>
                 <li class="cart-popup-item">
                   <a class="cart-popup-link" href="#">
-                    <img class="cart-popup-img" src="./img/catalog/product-2.jpg" width="39" height="43"></img>
+                    <img class="cart-popup-img" src="./img/catalog/product-2.jpg" width="39" height="43" alt="product-2">
                     <span class="cart-popup-product">Профессиональная селфи-палка</span>
                   </a>
                   <button class="product-remove-btn"></button>
@@ -49,7 +49,7 @@
                 <span>Товаров: <b class="cart-status-number">2</b></span>
                 <span>Сумма: <b class="cart-status-number">2000 ₽</b></span>
               </p>
-              <a class="open-cart-button" href="#cart" type="button">Открыть корзину</a>
+              <a class="open-cart-button" href="#cart">Открыть корзину</a>
           </div>
         </div>
 
@@ -57,7 +57,8 @@
             <button class="dropdown-button">
               Каталог товаров
               <span class="dropdown-icon"></span>
-              <ul class="sub-catalog">
+            </button>
+            <ul class="sub-catalog">
                 <li class="ssub-catalog-column-1 sub-catalog-row-1">
                   <a class="sub-catalog-link" href="catalog.html">Виртуальная реальность</a>
                 </li>
@@ -76,9 +77,7 @@
                  <li class="sub-catalog-column-3 sub-catalog-row-1">
                    <a class="sub-catalog-link" href="catalog.html">Квадрокоптеры</a>
                  </li>
-              </ul>
-            </button>
-
+            </ul>
             <ul class="header-services-list">
               <li>
                 <a class="service-link active" href="#">Доставка</a>
@@ -133,8 +132,6 @@
                       </div>
                     </dl>
                   </div>
-
-                </div>
               </li>
               <li class="slider-item">
                   <img class="slider-image" src="img/slider-3.png" width="560" height="560" alt="Фото палки для селфи">
@@ -333,7 +330,7 @@
 
       <footer class="page-footer">
         <a class="footer-logo-link" href="#">
-          <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" width="145" height="37" viewPort="0 0 141 62">
+          <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" width="145" height="37">
               <path d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.73 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.16 10.49l-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2ZM83.46 10.49h7.6v25.2h-7.6v-25.2ZM93.67 23.09c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3ZM132.9 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"/><path d="M83.46.39v10.1l7.6-10.1h-7.6Z"/>
           </svg>
         </a>
@@ -402,19 +399,19 @@
               <span class="delivery-form-error">Забавный у вас адрес</span>
             </label>
 
-            <label class="delivery-form-label quantity-label">
-              <span class="delivery-form-label-text" >
+            <div class="delivery-form-label quantity-label">
+              <label class="delivery-form-label-text" for="delivery-form-quantity">
                 Количество:
                 <span class="delivery-form-info-icon"></span>
                 <span class="delivery-form-info-tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
-              </span>
+              </label>
 
               <input class="delivery-form-input delivery-quantity-input" type="number" min="1" value="1" id="delivery-form-quantity">
               <div class="delivery-quantity-controls">
                 <button class="delivery-quantity-down" type="button"></button>
                 <button class="delivery-quantity-up" type="button"></button>
               </div>
-            </label>
+            </div>
 
             <button class="button delivery-form-submit">Отправить</button>
           </form>

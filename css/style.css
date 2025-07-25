@@ -455,7 +455,7 @@
   display: none;
 }
 
-.dropdown-button.active .sub-catalog {
+.dropdown-button.active + .sub-catalog {
   position: absolute;
   top: calc(100% + 2px);
   left: -60px;
@@ -2332,6 +2332,10 @@
 /* CART POPUP */
 
 .cart-popup {
+  display: none;
+}
+
+.cart-popup.active {
   position: absolute;
   top: 40px;
   right: -77px;
