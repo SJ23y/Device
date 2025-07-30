@@ -108,9 +108,17 @@
   background-color: #ffe17f;
 }
 
+.button:hover::after {
+  display: none;
+}
+
 .button:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.button:focus::after {
+  display: none;
 }
 
 .button:active {

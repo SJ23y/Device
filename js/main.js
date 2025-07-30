@@ -14,7 +14,10 @@ if (modal) {
 
   });
   if (modalCloseButton) {
-    modalCloseButton.addEventListener('click', () => modal.classList.toggle('active'));
+
+    modalCloseButton.addEventListener('click', () => {
+      modal.classList.toggle('active');
+    });
   }
 }
 
