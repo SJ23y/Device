@@ -1016,6 +1016,7 @@
   line-height: normal;
   color: #000000;
   background-color: #f0f0f0;
+  cursor: pointer;
 }
 
 .special-delivery-button::before {
@@ -2419,6 +2420,7 @@
   width: 320px;
   min-height: 216px;
   padding: 0;
+  padding-bottom: 20px;
   background-color: #000000;
   color: #ffffff;
   font-size: 16px;
